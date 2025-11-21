@@ -5,15 +5,11 @@ error_reporting(E_ALL);
 $host = "localhost";
 $user = "root";
 $password = "";
-$database = "airbnb";   //base = logement pour abdelrahmane
+$database = "airbnb";
 
 $conn = new mysqli($host, $user, $password, $database);
 if ($conn->connect_error) {
     die("Erreur de connexion : " . $conn->connect_error);
-}
-
-for ($i = 0; $i <10; $i++){
-    echo "hello world";
 }
 
 if (isset($_POST['ajouter'])) {
