@@ -12,8 +12,8 @@ if ($conn->connect_error) {
     die("Erreur de connexion : " . $conn->connect_error);
 }
 
-for ($i = 0; $i<5; $i++){
-    echo "bonjour";
+for ($i = 0; $i <10; $i++){
+    echo "hello world";
 }
 
 if (isset($_POST['ajouter'])) {
