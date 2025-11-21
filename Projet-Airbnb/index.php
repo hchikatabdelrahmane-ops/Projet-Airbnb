@@ -5,7 +5,7 @@ error_reporting(E_ALL);
 $host = "localhost";
 $user = "root";
 $password = "";
-$database = "logementgit a";
+$database = "logement";
 
 $conn = new mysqli($host, $user, $password, $database);
 if ($conn->connect_error) {
