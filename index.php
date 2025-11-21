@@ -5,11 +5,15 @@ error_reporting(E_ALL);
 $host = "localhost";
 $user = "root";
 $password = "";
-$database = "logementgit a";
+$database = "airbnb";
 
 $conn = new mysqli($host, $user, $password, $database);
 if ($conn->connect_error) {
     die("Erreur de connexion : " . $conn->connect_error);
+}
+
+for ($i = 0; $i<5; $i++){
+    echo "bonjour";
 }
 
 if (isset($_POST['ajouter'])) {
@@ -83,7 +87,7 @@ $total_pages = ceil($total / $par_page);
     <button type="submit" name="ajouter">Ajouter l'annonce</button>
 </form>
 
-<h2>Tri (/3)</h2>
+<h2>Tri</h2>
 <form method="GET">
     <label for="tri">Trier par :</label>
     <select id="tri" name="tri" onchange="this.form.submit()">
