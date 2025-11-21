@@ -1,7 +1,7 @@
 <?php
 
 $host = 'localhost';
-$dbh   = 'logement';   
+$dbh   = 'airbnb';   
 $user = 'root';       
 $pass = '';           
 
